@@ -13,6 +13,27 @@ defineProps({
       class="vinyl"
       :style="{ backgroundImage: `url(${image})` }"
     >
+      <svg class="vinyl-text" viewBox="0 0 100 100">
+        <defs>
+          <path
+            id="circlePath"
+            d="
+              M 50,50
+              m -35,0
+              a 35,35 0 1,1 70,0
+              a 35,35 0 1,1 -70,0
+            "
+          />
+        </defs>
+
+        <text>
+          <textPath
+            href="#circlePath"
+            startOffset="0%"
+          >
+          </textPath>
+        </text>
+      </svg>
       <div class="vinyl-center"></div>
     </div>
   </div>
@@ -21,7 +42,7 @@ defineProps({
 <style scoped>
 .vinyl-container {
   width: 100%;
-  height: 100%;
+  height: 200px;
 
   overflow: hidden;
 
@@ -46,7 +67,7 @@ defineProps({
 
   position: relative;
 
-  transform: translateY(50%);
+  transform: translateY(40%);
 
   box-shadow:
     inset 0 0 0 2px rgba(255,255,255,.15),
@@ -91,11 +112,32 @@ defineProps({
 
 @keyframes spin {
   from {
-    transform: translateY(50%) rotate(0deg);
+    transform: translateY(35%) rotate(0deg);
   }
 
   to {
-    transform: translateY(50%) rotate(360deg);
+    transform: translateY(35%) rotate(360deg);
   }
+}
+  
+.vinyl-text {
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+}
+
+.vinyl-text text {
+  fill: rgba(255, 255, 255, 0.7);
+
+  font-size: 6px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'geologica', sans-serif;
+  font-style: italic;
 }
 </style>
