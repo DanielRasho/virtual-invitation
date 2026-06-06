@@ -51,10 +51,11 @@ onUnmounted(() => {
     <div class="title">
       <AnimatedTitle></AnimatedTitle>
       <Banner class="title-banner"></Banner>
-    <div/>
-      
-
     </div>
+    
+    <p class="subtitle">
+      "Proyecto final de montaje de eventos y servicios de catering"
+    </p>
     <p class="countdown">
       <Countdown label="Dias" :value="days"/>
       <Countdown label="Horas" :value="hours" />
@@ -124,6 +125,16 @@ onUnmounted(() => {
 
 .hero-btn-uwu{
   width: min(60%, 30ch);
+}
+
+.subtitle {
+  text-align: center;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  
+  margin-bottom: 2rem;
+  padding: 0 1ch;
 }
 
 </style>

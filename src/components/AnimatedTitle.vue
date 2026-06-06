@@ -50,7 +50,7 @@ onMounted(() => {
 
     <div class="date">
       <span ref="dateText" class="date-text">
-        Mixtape
+        Retro
       </span>
     </div>
   </div>
