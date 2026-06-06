@@ -15,5 +15,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: 'https://github.com/DanielRasho/virtual-invitation'
+  base: 'https://danielrasho.github.io/virtual-invitation/'
 })
