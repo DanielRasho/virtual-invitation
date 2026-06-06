@@ -1,0 +1,11 @@
+@import url(./reset.css);
+
+* {
+    --background : #aaa;
+    --accent : #aaa;
+    --gray-100 : #aaa;
+    --gray-200 : #aaa;
+    --gray-300 : #aaa;
+    --gray-400 : #aaa;
+    background-color: rgb(247, 247, 247);
+}
