@@ -109,7 +109,7 @@ onMounted(() => {
   display: inline-block;
   position: relative;
   background-color: transparent;
-  top: -3rem;
+  top: -1rem;
 
   color: #cfcfcf;
 
@@ -119,5 +119,11 @@ onMounted(() => {
     -11px 11px 0 #7f7f7f,
     -22px 22px 0 #bdbdbd,
     -33px 33px 0 #e6e6e6;
+}
+
+@media (min-width: 400px) {
+  .date-text {
+    top: -3rem;
+  }
 }
 </style>
