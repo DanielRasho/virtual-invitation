@@ -9,3 +9,7 @@
     --gray-400 : #aaa;
     background-color: rgb(247, 247, 247);
 }
+
+#app {
+    height: 100vh;
+}

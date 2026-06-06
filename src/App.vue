@@ -2,6 +2,7 @@
 import AnimatedTitle from './components/AnimatedTitle.vue';
 import Countdown from './components/countdown.vue';
 import { ref, onMounted, onUnmounted } from 'vue'
+import Vynil from './components/vynil.vue';
 
 const days = ref(0)
 const hours = ref(0)
@@ -56,7 +57,9 @@ onUnmounted(() => {
       <Countdown label="Minutos" :value="minutes" />
     </p>
     <!-- FOOTER -->
-    <p></p>
+    <div class="record-wrapper">
+      <Vynil image="vinyl.jpg"></Vynil>      
+    </div>
 </template>
 
 <style scoped>
@@ -70,6 +73,22 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.record-wrapper {
+  position: absolute;
+  width: 75vw;
+  margin: auto;
+  background-color: transparent;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (min-width: 700px) {
+  .record-wrapper {
+    width: 30vw;
+  }
 }
 
 </style>

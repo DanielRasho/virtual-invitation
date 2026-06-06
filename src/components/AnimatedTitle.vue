@@ -68,7 +68,7 @@ onMounted(() => {
 
 .save-the {
   font-family: 'Geologica', sans-serif;
-  font-size: clamp(4rem, 25vw, 6rem);
+  font-size: clamp(3rem, 15vw, 6rem);
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
