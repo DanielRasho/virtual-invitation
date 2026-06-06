@@ -45,12 +45,12 @@ onMounted(() => {
 <template>
   <div class="title-container">
     <div class="save-the">
-      SAVE THE
+      Noche
     </div>
 
     <div class="date">
       <span ref="dateText" class="date-text">
-        DATE
+        Mixtape
       </span>
     </div>
   </div>
@@ -70,7 +70,6 @@ onMounted(() => {
   font-family: 'Geologica', sans-serif;
   font-size: clamp(3rem, 15vw, 6rem);
   font-weight: 700;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 900;
 
@@ -101,7 +100,7 @@ onMounted(() => {
   justify-content: center;
 
   font-family: 'Agbalumo', serif;
-  font-size: clamp(7rem, 20vw, 10rem);
+  font-size: clamp(3rem, 20vw, 10rem);
   line-height: 0.9;
 }
 
@@ -110,6 +109,7 @@ onMounted(() => {
   position: relative;
   background-color: transparent;
   top: -1rem;
+  text-align: center;
 
   color: #cfcfcf;
 

@@ -3,6 +3,7 @@ import AnimatedTitle from './components/AnimatedTitle.vue';
 import Countdown from './components/countdown.vue';
 import { ref, onMounted, onUnmounted } from 'vue'
 import Vynil from './components/vynil.vue';
+import Banner from './components/banner.vue';
 
 const days = ref(0)
 const hours = ref(0)
@@ -47,7 +48,9 @@ onUnmounted(() => {
 
     <div class="title">
       <AnimatedTitle></AnimatedTitle>
+      <Banner class="title-banner"></Banner>
     <div/>
+      
       
 
     </div>
@@ -67,6 +70,15 @@ onUnmounted(() => {
 .title {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-banner {
+  z-index: 100;
 }
 
 .countdown {
@@ -76,7 +88,6 @@ onUnmounted(() => {
 }
 
 .record-wrapper {
-  position: absolute;
   width: 75vw;
   margin: auto;
   background-color: transparent;
