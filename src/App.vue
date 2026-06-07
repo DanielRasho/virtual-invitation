@@ -65,8 +65,12 @@ onUnmounted(() => {
     <Info></Info>
     
     <div class="hero-btn">
-      <HeroButton text="Confirmar Asistencia" class="hero-btn-uwu"></HeroButton>
-      <HeroButton text="Ver Ubicación" class="hero-btn-uwu"></HeroButton>
+      <HeroButton 
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfObldUuUTPkA2LRGaqGU9b8W13EzrTvspks7qM0wEViRImwQ/viewform?usp=dialog"
+      text="Confirmar Asistencia" class="hero-btn-uwu"></HeroButton>
+      <HeroButton 
+      href="https://www.google.com/maps/place/Banquetes+Club+Industrial/@14.6159082,-90.5168959,17z/data=!3m1!4b1!4m6!3m5!1s0x8589a23249e8c915:0x5c210708d21911ee!8m2!3d14.615903!4d-90.514321!16s%2Fg%2F11b8zm73gt?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D"
+      text="Ver Ubicación" class="hero-btn-uwu"></HeroButton>
     </div>
 
     <!-- FOOTER -->
